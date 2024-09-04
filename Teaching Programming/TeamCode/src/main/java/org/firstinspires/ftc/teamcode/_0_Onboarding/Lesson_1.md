@@ -22,4 +22,5 @@ leftFront ... etc.  This is your hardware map.
 Java Syntax:
 
 These are a few good points to keep in mind, however just as a reminder, every statement in java must
-close with a semi-colon.  All classes must have
+close with a semi-colon.  All classes must have curled brackets at the beginning and end of a class. 
+All code in this repository will have correct syntax, and may be used as a reference.

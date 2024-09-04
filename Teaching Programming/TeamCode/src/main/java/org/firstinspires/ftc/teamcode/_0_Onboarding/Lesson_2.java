@@ -15,15 +15,63 @@ private static class Human {//This is not a standard procedure, however for the 
     //allows the class or variable to be referenced anywhere in your code, without having to call
     //its entire class of origin, enhancing readability and memory efficiency.
 
+    public String mName;
+    public int mAge;
+    public double mHeightMeters;
+    public boolean mAlive; //These are called member variables.  These variables will be accessible
+    //anywhere in the code
+
     //Now, let's begin!
 
-    private Human(String name, int age, double heightMeters, boolean alive){
+    private Human(String name, int age, double heightMeters, boolean alive){//here we have made "local
+        //variables"  They only apply in the constructor.
         //welcome to the constructor.  This is where we set the necessary parameters for every
         //class that we work with.  This 'Human' class, specifically, has 4 parameters.
         //These 4 Parameters are all of a different data type.  int(integers), are whole numbers.
         //doubles are all numbers, positive negative and decimal.  Strings are a series of characters
         //or words.  Booleans are true or false.
+        mName = name;
+        mAge = age;
+        mHeightMeters = heightMeters;
+        mAlive = alive; //As the local variables cannot be used anywhere but here, we now equate them
+        //with our member variables, so that whatever values are attached to the Human clas, when
+        //it is instantiated, they will be properly assigned.
 
+    }
+
+    //now that we have created sufficient variables, let's make a few methods, getters and setters.
+
+    public void setName(String setName){
+        mName = setName;
+    }
+
+    public void setAge(int setAge){
+        mAge = setAge;
+    }
+
+    public void setAlive(boolean setAlive){
+        mAlive = setAlive;
+    }
+
+    public void setHeightMeters(double setHeightMeters){
+        mHeightMeters = setHeightMeters;
+    }
+
+
+    public String getName(){
+        return mName;
+    }
+
+    public int getAge(){
+        return mAge;
+    }
+
+    public boolean getAlive(){
+        return mAlive;
+    }
+
+    public double getHeightMeters(){
+        return mHeightMeters;
     }
 }
 
