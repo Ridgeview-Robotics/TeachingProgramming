@@ -43,11 +43,12 @@ private static class Human {//This is not a standard procedure, however for the 
 
     public void setName(String setName){
         mName = setName;
-    }
+    }//This is a VOID.  This means that it completes an action of some kind.  This action, or Method
+    //specifically is setting the Name of this human, to the given variable when the
 
     public void setAge(int setAge){
         mAge = setAge;
-    }
+    }//All of these following Voids follow the same syntax around the same idea.
 
     public void setAlive(boolean setAlive){
         mAlive = setAlive;
@@ -60,7 +61,8 @@ private static class Human {//This is not a standard procedure, however for the 
 
     public String getName(){
         return mName;
-    }
+    }//these are identified as public Strings, ints, boolean, etc.  These functions are defined by
+    //the variable type that they return respectively.
 
     public int getAge(){
         return mAge;
